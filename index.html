@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Book Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fantasy Book Tracker</h1>
+            <p class="subtitle">Track and rate your favorite fantasy novels</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by title or author...">
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="statusFilter">Status:</label>
+                    <select id="statusFilter">
+                        <option value="all">All Books</option>
+                        <option value="read">Read</option>
+                        <option value="unread">Not Yet Read</option>
+                        <option value="rated">Rated</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="themeFilter">Theme:</label>
+                    <select id="themeFilter">
+                        <option value="all">All Themes</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sortBy">Sort By:</label>
+                    <select id="sortBy">
+                        <option value="title">Title (A-Z)</option>
+                        <option value="author">Author</option>
+                        <option value="year-asc">Year (Oldest)</option>
+                        <option value="year-desc">Year (Newest)</option>
+                        <option value="rating">My Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalBooks">0</span>
+                    <span class="stat-label">Total Books</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="readBooks">0</span>
+                    <span class="stat-label">Books Read</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="avgRating">0</span>
+                    <span class="stat-label">Avg Rating</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="bookGrid" class="book-grid">
+            <!-- Books will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Modal for book details -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalAuthor"></p>
+            <p id="modalYear"></p>
+            <div id="modalThemes" class="theme-tags"></div>
+
+            <div class="rating-section">
+                <h3>Your Rating</h3>
+                <div class="star-rating" id="modalRating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button id="markReadBtn" class="btn btn-primary">Mark as Read</button>
+                <button id="clearRatingBtn" class="btn btn-secondary">Clear Rating</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "themes": ["epic fantasy", "quest", "good vs evil", "magic rings", "fellowship"]
+  },
+  {
+    "id": 2,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "year": 1937,
+    "themes": ["adventure", "dragons", "treasure", "coming of age", "dwarves"]
+  },
+  {
+    "id": 3,
+    "title": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "year": 1996,
+    "themes": ["political intrigue", "war", "multiple POV", "dark fantasy", "dragons"]
+  },
+  {
+    "id": 4,
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "year": 2007,
+    "themes": ["magic school", "music", "revenge", "coming of age", "first person"]
+  },
+  {
+    "id": 5,
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson",
+    "year": 2010,
+    "themes": ["epic fantasy", "hard magic", "war", "mental health", "honor"]
+  },
+  {
+    "id": 6,
+    "title": "Mistborn: The Final Empire",
+    "author": "Brandon Sanderson",
+    "year": 2006,
+    "themes": ["heist", "rebellion", "hard magic", "thieves", "revolution"]
+  },
+  {
+    "id": 7,
+    "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "author": "C.S. Lewis",
+    "year": 1950,
+    "themes": ["portal fantasy", "talking animals", "allegory", "children", "winter"]
+  },
+  {
+    "id": 8,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "year": 1997,
+    "themes": ["magic school", "chosen one", "friendship", "coming of age", "wizards"]
+  },
+  {
+    "id": 9,
+    "title": "The Wheel of Time: The Eye of the World",
+    "author": "Robert Jordan",
+    "year": 1990,
+    "themes": ["epic fantasy", "prophecy", "chosen one", "quest", "magic"]
+  },
+  {
+    "id": 10,
+    "title": "A Wizard of Earthsea",
+    "author": "Ursula K. Le Guin",
+    "year": 1968,
+    "themes": ["coming of age", "magic school", "balance", "true names", "dragons"]
+  },
+  {
+    "id": 11,
+    "title": "The Princess Bride",
+    "author": "William Goldman",
+    "year": 1973,
+    "themes": ["romance", "adventure", "humor", "pirates", "revenge"]
+  },
+  {
+    "id": 12,
+    "title": "Good Omens",
+    "author": "Neil Gaiman & Terry Pratchett",
+    "year": 1990,
+    "themes": ["humor", "apocalypse", "angels", "demons", "satire"]
+  },
+  {
+    "id": 13,
+    "title": "American Gods",
+    "author": "Neil Gaiman",
+    "year": 2001,
+    "themes": ["urban fantasy", "mythology", "gods", "road trip", "modern america"]
+  },
+  {
+    "id": 14,
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "year": 2011,
+    "themes": ["romance", "magic", "circus", "competition", "atmospheric"]
+  },
+  {
+    "id": 15,
+    "title": "The Sword of Shannara",
+    "author": "Terry Brooks",
+    "year": 1977,
+    "themes": ["epic fantasy", "quest", "elves", "magic sword", "chosen one"]
+  },
+  {
+    "id": 16,
+    "title": "Elantris",
+    "author": "Brandon Sanderson",
+    "year": 2005,
+    "themes": ["standalone", "fallen gods", "magic", "politics", "redemption"]
+  },
+  {
+    "id": 17,
+    "title": "The Lies of Locke Lamora",
+    "author": "Scott Lynch",
+    "year": 2006,
+    "themes": ["heist", "thieves", "con artists", "revenge", "friendship"]
+  },
+  {
+    "id": 18,
+    "title": "The Fifth Season",
+    "author": "N.K. Jemisin",
+    "year": 2015,
+    "themes": ["apocalyptic", "geology magic", "oppression", "multiple timelines", "mother-daughter"]
+  },
+  {
+    "id": 19,
+    "title": "Assassin's Apprentice",
+    "author": "Robin Hobb",
+    "year": 1995,
+    "themes": ["assassins", "coming of age", "political intrigue", "animals", "first person"]
+  },
+  {
+    "id": 20,
+    "title": "The Blade Itself",
+    "author": "Joe Abercrombie",
+    "year": 2006,
+    "themes": ["grimdark", "anti-heroes", "war", "torture", "dark humor"]
+  },
+  {
+    "id": 21,
+    "title": "The Dark Tower: The Gunslinger",
+    "author": "Stephen King",
+    "year": 1982,
+    "themes": ["western", "post-apocalyptic", "quest", "gunslingers", "parallel worlds"]
+  },
+  {
+    "id": 22,
+    "title": "The Once and Future King",
+    "author": "T.H. White",
+    "year": 1958,
+    "themes": ["arthurian", "coming of age", "knights", "magic", "tragedy"]
+  },
+  {
+    "id": 23,
+    "title": "Jonathan Strange & Mr Norrell",
+    "author": "Susanna Clarke",
+    "year": 2004,
+    "themes": ["historical fantasy", "english magic", "napoleonic wars", "faeries", "scholarly"]
+  },
+  {
+    "id": 24,
+    "title": "The Mists of Avalon",
+    "author": "Marion Zimmer Bradley",
+    "year": 1983,
+    "themes": ["arthurian", "feminist", "multiple POV", "priestesses", "politics"]
+  },
+  {
+    "id": 25,
+    "title": "His Dark Materials: The Golden Compass",
+    "author": "Philip Pullman",
+    "year": 1995,
+    "themes": ["parallel worlds", "daemons", "coming of age", "church", "adventure"]
+  },
+  {
+    "id": 26,
+    "title": "The Poppy War",
+    "author": "R.F. Kuang",
+    "year": 2018,
+    "themes": ["grimdark", "war", "shamanism", "genocide", "revenge"]
+  },
+  {
+    "id": 27,
+    "title": "The Black Prism",
+    "author": "Brent Weeks",
+    "year": 2010,
+    "themes": ["hard magic", "political intrigue", "war", "light magic", "secrets"]
+  },
+  {
+    "id": 28,
+    "title": "The Night Angel Trilogy: The Way of Shadows",
+    "author": "Brent Weeks",
+    "year": 2008,
+    "themes": ["assassins", "coming of age", "magic", "poverty", "mentor"]
+  },
+  {
+    "id": 29,
+    "title": "The First Law: The Blade Itself",
+    "author": "Joe Abercrombie",
+    "year": 2006,
+    "themes": ["grimdark", "anti-heroes", "political intrigue", "war", "dark humor"]
+  },
+  {
+    "id": 30,
+    "title": "Tigana",
+    "author": "Guy Gavriel Kay",
+    "year": 1990,
+    "themes": ["standalone", "memory", "occupation", "revenge", "italian renaissance"]
+  },
+  {
+    "id": 31,
+    "title": "The Silmarillion",
+    "author": "J.R.R. Tolkien",
+    "year": 1977,
+    "themes": ["mythology", "creation", "epic", "elves", "tragedy"]
+  },
+  {
+    "id": 32,
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "year": 2002,
+    "themes": ["horror", "parallel world", "children", "courage", "dark fantasy"]
+  },
+  {
+    "id": 33,
+    "title": "The Magicians",
+    "author": "Lev Grossman",
+    "year": 2009,
+    "themes": ["magic school", "dark", "depression", "parallel worlds", "adult"]
+  },
+  {
+    "id": 34,
+    "title": "Gardens of the Moon",
+    "author": "Steven Erikson",
+    "year": 1999,
+    "themes": ["epic fantasy", "complex", "military", "gods", "multiple POV"]
+  },
+  {
+    "id": 35,
+    "title": "The Colour of Magic",
+    "author": "Terry Pratchett",
+    "year": 1983,
+    "themes": ["humor", "satire", "wizards", "disc world", "parody"]
+  },
+  {
+    "id": 36,
+    "title": "Neverwhere",
+    "author": "Neil Gaiman",
+    "year": 1996,
+    "themes": ["urban fantasy", "london below", "quest", "parallel world", "dark"]
+  },
+  {
+    "id": 37,
+    "title": "The Way of Shadows",
+    "author": "Brent Weeks",
+    "year": 2008,
+    "themes": ["assassins", "coming of age", "dark", "magic", "mentor"]
+  },
+  {
+    "id": 38,
+    "title": "Warbreaker",
+    "author": "Brandon Sanderson",
+    "year": 2009,
+    "themes": ["standalone", "color magic", "politics", "gods", "necromancy"]
+  },
+  {
+    "id": 39,
+    "title": "The Shadow of the Wind",
+    "author": "Carlos Ruiz Zafón",
+    "year": 2001,
+    "themes": ["historical fantasy", "books", "mystery", "barcelona", "gothic"]
+  },
+  {
+    "id": 40,
+    "title": "Stardust",
+    "author": "Neil Gaiman",
+    "year": 1999,
+    "themes": ["romance", "adventure", "faerie", "coming of age", "quest"]
+  },
+  {
+    "id": 41,
+    "title": "The Riddle-Master of Hed",
+    "author": "Patricia A. McKillip",
+    "year": 1976,
+    "themes": ["quest", "riddles", "identity", "prophecy", "lyrical"]
+  },
+  {
+    "id": 42,
+    "title": "The Priory of the Orange Tree",
+    "author": "Samantha Shannon",
+    "year": 2019,
+    "themes": ["standalone", "dragons", "epic fantasy", "lgbtq", "multiple POV"]
+  },
+  {
+    "id": 43,
+    "title": "The Bear and the Nightingale",
+    "author": "Katherine Arden",
+    "year": 2017,
+    "themes": ["russian folklore", "historical fantasy", "spirits", "winter", "strong heroine"]
+  },
+  {
+    "id": 44,
+    "title": "Uprooted",
+    "author": "Naomi Novik",
+    "year": 2015,
+    "themes": ["standalone", "fairy tale", "magic", "forest", "romance"]
+  },
+  {
+    "id": 45,
+    "title": "The Ocean at the End of the Lane",
+    "author": "Neil Gaiman",
+    "year": 2013,
+    "themes": ["coming of age", "memory", "horror", "childhood", "magic"]
+  },
+  {
+    "id": 46,
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "year": 2011,
+    "themes": ["mythology", "greek", "romance", "lgbtq", "tragedy"]
+  },
+  {
+    "id": 47,
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "year": 2018,
+    "themes": ["mythology", "greek", "witches", "feminist", "gods"]
+  },
+  {
+    "id": 48,
+    "title": "The Broken Earth: The Fifth Season",
+    "author": "N.K. Jemisin",
+    "year": 2015,
+    "themes": ["apocalyptic", "magic", "oppression", "geology", "mother-daughter"]
+  },
+  {
+    "id": 49,
+    "title": "City of Stairs",
+    "author": "Robert Jackson Bennett",
+    "year": 2014,
+    "themes": ["gods", "mystery", "colonialism", "political", "detective"]
+  },
+  {
+    "id": 50,
+    "title": "The Goblin Emperor",
+    "author": "Katherine Addison",
+    "year": 2014,
+    "themes": ["court intrigue", "politics", "coming of age", "kindness", "standalone"]
+  },
+  {
+    "id": 51,
+    "title": "The Last Unicorn",
+    "author": "Peter S. Beagle",
+    "year": 1968,
+    "themes": ["fairy tale", "quest", "unicorns", "melancholy", "redemption"]
+  },
+  {
+    "id": 52,
+    "title": "The Dresden Files: Storm Front",
+    "author": "Jim Butcher",
+    "year": 2000,
+    "themes": ["urban fantasy", "detective", "wizards", "noir", "first person"]
+  },
+  {
+    "id": 53,
+    "title": "The Kingkiller Chronicle: The Wise Man's Fear",
+    "author": "Patrick Rothfuss",
+    "year": 2011,
+    "themes": ["magic", "adventure", "romance", "music", "coming of age"]
+  },
+  {
+    "id": 54,
+    "title": "The Earthsea Cycle: The Tombs of Atuan",
+    "author": "Ursula K. Le Guin",
+    "year": 1971,
+    "themes": ["coming of age", "priestess", "freedom", "identity", "darkness"]
+  },
+  {
+    "id": 55,
+    "title": "Elric of Melniboné",
+    "author": "Michael Moorcock",
+    "year": 1972,
+    "themes": ["anti-hero", "dark fantasy", "demons", "magic sword", "tragedy"]
+  },
+  {
+    "id": 56,
+    "title": "The Black Company",
+    "author": "Glen Cook",
+    "year": 1984,
+    "themes": ["military fantasy", "mercenaries", "grimdark", "first person", "war"]
+  },
+  {
+    "id": 57,
+    "title": "The Liveship Traders: Ship of Magic",
+    "author": "Robin Hobb",
+    "year": 1998,
+    "themes": ["sailing", "dragons", "family", "pirates", "multiple POV"]
+  },
+  {
+    "id": 58,
+    "title": "The Curse of Chalion",
+    "author": "Lois McMaster Bujold",
+    "year": 2001,
+    "themes": ["standalone", "gods", "court intrigue", "older protagonist", "redemption"]
+  },
+  {
+    "id": 59,
+    "title": "The Shades of Magic: A Darker Shade of Magic",
+    "author": "V.E. Schwab",
+    "year": 2015,
+    "themes": ["parallel worlds", "magic", "pirates", "london", "adventure"]
+  },
+  {
+    "id": 60,
+    "title": "Sabriel",
+    "author": "Garth Nix",
+    "year": 1995,
+    "themes": ["necromancy", "coming of age", "quest", "death", "magic"]
+  },
+  {
+    "id": 61,
+    "title": "The Fionavar Tapestry: The Summer Tree",
+    "author": "Guy Gavriel Kay",
+    "year": 1984,
+    "themes": ["portal fantasy", "sacrifice", "arthurian", "epic", "students"]
+  },
+  {
+    "id": 62,
+    "title": "Blood Song",
+    "author": "Anthony Ryan",
+    "year": 2011,
+    "themes": ["training", "coming of age", "war", "first person", "warrior"]
+  },
+  {
+    "id": 63,
+    "title": "The Riyria Revelations: Theft of Swords",
+    "author": "Michael J. Sullivan",
+    "year": 2011,
+    "themes": ["thieves", "friendship", "adventure", "humor", "conspiracy"]
+  },
+  {
+    "id": 64,
+    "title": "Perdido Street Station",
+    "author": "China Miéville",
+    "year": 2000,
+    "themes": ["weird fantasy", "steampunk", "horror", "urban", "bizarre"]
+  },
+  {
+    "id": 65,
+    "title": "The Sword of Truth: Wizard's First Rule",
+    "author": "Terry Goodkind",
+    "year": 1994,
+    "themes": ["epic fantasy", "quest", "magic", "philosophy", "chosen one"]
+  },
+  {
+    "id": 66,
+    "title": "The Riftwar Saga: Magician: Apprentice",
+    "author": "Raymond E. Feist",
+    "year": 1982,
+    "themes": ["coming of age", "war", "portal", "magic", "apprentice"]
+  },
+  {
+    "id": 67,
+    "title": "The Chronicles of Amber: Nine Princes in Amber",
+    "author": "Roger Zelazny",
+    "year": 1970,
+    "themes": ["parallel worlds", "amnesia", "family conflict", "portal", "intrigue"]
+  },
+  {
+    "id": 68,
+    "title": "The Belgariad: Pawn of Prophecy",
+    "author": "David Eddings",
+    "year": 1982,
+    "themes": ["quest", "chosen one", "prophecy", "coming of age", "mentor"]
+  },
+  {
+    "id": 69,
+    "title": "Spinning Silver",
+    "author": "Naomi Novik",
+    "year": 2018,
+    "themes": ["fairy tale", "jewish folklore", "multiple POV", "winter", "romance"]
+  },
+  {
+    "id": 70,
+    "title": "The Long Price Quartet: A Shadow in Summer",
+    "author": "Daniel Abraham",
+    "year": 2006,
+    "themes": ["asian-inspired", "magic", "politics", "tragedy", "complex"]
+  },
+  {
+    "id": 71,
+    "title": "Trail of Lightning",
+    "author": "Rebecca Roanhorse",
+    "year": 2018,
+    "themes": ["native american", "post-apocalyptic", "monsters", "navajo", "urban fantasy"]
+  },
+  {
+    "id": 72,
+    "title": "The Golem and the Jinni",
+    "author": "Helene Wecker",
+    "year": 2013,
+    "themes": ["historical fantasy", "jewish folklore", "new york", "friendship", "immigrants"]
+  },
+  {
+    "id": 73,
+    "title": "The Broken Earth: The Obelisk Gate",
+    "author": "N.K. Jemisin",
+    "year": 2016,
+    "themes": ["apocalyptic", "geology magic", "oppression", "survival", "family"]
+  },
+  {
+    "id": 74,
+    "title": "Prince of Thorns",
+    "author": "Mark Lawrence",
+    "year": 2011,
+    "themes": ["grimdark", "anti-hero", "revenge", "coming of age", "dark"]
+  },
+  {
+    "id": 75,
+    "title": "The Grace of Kings",
+    "author": "Ken Liu",
+    "year": 2015,
+    "themes": ["asian-inspired", "epic fantasy", "war", "politics", "gods"]
+  },
+  {
+    "id": 76,
+    "title": "The Traitor Baru Cormorant",
+    "author": "Seth Dickinson",
+    "year": 2015,
+    "themes": ["political intrigue", "economics", "colonialism", "lgbtq", "tragedy"]
+  },
+  {
+    "id": 77,
+    "title": "The Warded Man",
+    "author": "Peter V. Brett",
+    "year": 2008,
+    "themes": ["demons", "horror", "coming of age", "magic wards", "survival"]
+  },
+  {
+    "id": 78,
+    "title": "Kushiel's Dart",
+    "author": "Jacqueline Carey",
+    "year": 2001,
+    "themes": ["romance", "political intrigue", "alternate history", "spies", "france"]
+  },
+  {
+    "id": 79,
+    "title": "The Powder Mage: Promise of Blood",
+    "author": "Brian McClellan",
+    "year": 2013,
+    "themes": ["flintlock fantasy", "military", "revolution", "magic", "gunpowder"]
+  },
+  {
+    "id": 80,
+    "title": "The Greatcoats: Traitor's Blade",
+    "author": "Sebastien de Castell",
+    "year": 2014,
+    "themes": ["swashbuckling", "justice", "friendship", "revenge", "musketeers"]
+  },
+  {
+    "id": 81,
+    "title": "The Shadow Campaigns: The Thousand Names",
+    "author": "Django Wexler",
+    "year": 2013,
+    "themes": ["military fantasy", "flintlock", "napoleon", "magic", "war"]
+  },
+  {
+    "id": 82,
+    "title": "Red Sister",
+    "author": "Mark Lawrence",
+    "year": 2017,
+    "themes": ["assassins", "nuns", "coming of age", "training", "revenge"]
+  },
+  {
+    "id": 83,
+    "title": "The Rage of Dragons",
+    "author": "Evan Winter",
+    "year": 2019,
+    "themes": ["african-inspired", "revenge", "dragons", "war", "training"]
+  },
+  {
+    "id": 84,
+    "title": "Senlin Ascends",
+    "author": "Josiah Bancroft",
+    "year": 2013,
+    "themes": ["steampunk", "tower", "lost love", "adventure", "unique"]
+  },
+  {
+    "id": 85,
+    "title": "The Ember Blade",
+    "author": "Chris Wooding",
+    "year": 2018,
+    "themes": ["epic fantasy", "rebellion", "quest", "magic sword", "coming of age"]
+  },
+  {
+    "id": 86,
+    "title": "The Rage of Dragons",
+    "author": "Evan Winter",
+    "year": 2019,
+    "themes": ["african-inspired", "revenge", "dragons", "war", "training"]
+  },
+  {
+    "id": 87,
+    "title": "Jade City",
+    "author": "Fonda Lee",
+    "year": 2017,
+    "themes": ["asian-inspired", "urban fantasy", "martial arts", "family", "crime"]
+  },
+  {
+    "id": 88,
+    "title": "Sorcerer to the Crown",
+    "author": "Zen Cho",
+    "year": 2015,
+    "themes": ["historical fantasy", "regency", "magic", "politics", "racism"]
+  },
+  {
+    "id": 89,
+    "title": "The Ten Thousand Doors of January",
+    "author": "Alix E. Harrow",
+    "year": 2019,
+    "themes": ["portal fantasy", "coming of age", "historical", "doors", "adventure"]
+  },
+  {
+    "id": 90,
+    "title": "The Bone Ships",
+    "author": "RJ Barker",
+    "year": 2019,
+    "themes": ["sailing", "dragons", "military", "underdog", "naval"]
+  },
+  {
+    "id": 91,
+    "title": "The House in the Cerulean Sea",
+    "author": "TJ Klune",
+    "year": 2020,
+    "themes": ["wholesome", "lgbtq", "family", "magical children", "found family"]
+  },
+  {
+    "id": 92,
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "year": 2020,
+    "themes": ["mystery", "philosophical", "labyrinth", "literary", "strange"]
+  },
+  {
+    "id": 93,
+    "title": "The City We Became",
+    "author": "N.K. Jemisin",
+    "year": 2020,
+    "themes": ["urban fantasy", "new york", "cities", "lovecraftian", "diversity"]
+  },
+  {
+    "id": 94,
+    "title": "Black Leopard, Red Wolf",
+    "author": "Marlon James",
+    "year": 2019,
+    "themes": ["african mythology", "dark", "complex", "quest", "unreliable narrator"]
+  },
+  {
+    "id": 95,
+    "title": "The Invisible Life of Addie LaRue",
+    "author": "V.E. Schwab",
+    "year": 2020,
+    "themes": ["historical fantasy", "immortality", "romance", "deals", "memory"]
+  },
+  {
+    "id": 96,
+    "title": "Gideon the Ninth",
+    "author": "Tamsyn Muir",
+    "year": 2019,
+    "themes": ["necromancy", "space", "lgbtq", "humor", "mystery"]
+  },
+  {
+    "id": 97,
+    "title": "The Rage of Dragons",
+    "author": "Evan Winter",
+    "year": 2019,
+    "themes": ["african-inspired", "revenge", "dragons", "war", "training"]
+  },
+  {
+    "id": 98,
+    "title": "Ninth House",
+    "author": "Leigh Bardugo",
+    "year": 2019,
+    "themes": ["urban fantasy", "dark academia", "ghosts", "secret societies", "yale"]
+  },
+  {
+    "id": 99,
+    "title": "The Starless Sea",
+    "author": "Erin Morgenstern",
+    "year": 2019,
+    "themes": ["literary", "library", "mystery", "atmospheric", "metafiction"]
+  },
+  {
+    "id": 100,
+    "title": "A Deadly Education",
+    "author": "Naomi Novik",
+    "year": 2020,
+    "themes": ["magic school", "dark", "survival", "monsters", "coming of age"]
+  }
+]
