@@ -244,6 +244,7 @@ function setRating(bookId, rating) {
     });
 
     renderBooks();
+    updateRecommendations();
 }
 
 // Toggle read status
@@ -257,6 +258,7 @@ function toggleReadStatus(bookId) {
     markReadBtn.textContent = newReadStatus ? 'Mark as Unread' : 'Mark as Read';
 
     renderBooks();
+    updateRecommendations();
 }
 
 // Clear rating
@@ -271,6 +273,7 @@ function clearRating() {
     });
 
     renderBooks();
+    updateRecommendations();
 }
 
 // Update statistics
@@ -294,6 +297,116 @@ function updateStats() {
     document.getElementById('totalBooks').textContent = totalBooks;
     document.getElementById('readBooks').textContent = readBooks;
     document.getElementById('avgRating').textContent = avgRating;
+
+    // Update recommendations
+    updateRecommendations();
+}
+
+// Generate book recommendations based on user ratings
+function getRecommendations() {
+    // Find highly-rated books (4-5 stars)
+    const highlyRatedBooks = booksData.filter(book => {
+        const userData = getUserBookData(book.id);
+        return userData.rating >= 4;
+    });
+
+    // If user hasn't rated any books highly, return empty
+    if (highlyRatedBooks.length === 0) {
+        return [];
+    }
+
+    // Collect themes from highly-rated books with weights
+    const themeWeights = {};
+    highlyRatedBooks.forEach(book => {
+        const rating = getUserBookData(book.id).rating;
+        book.themes.forEach(theme => {
+            // Weight themes by rating (5-star books have more influence than 4-star)
+            themeWeights[theme] = (themeWeights[theme] || 0) + rating;
+        });
+    });
+
+    // Score unread books based on theme overlap
+    const unreadBooks = booksData.filter(book => {
+        const userData = getUserBookData(book.id);
+        return !userData.isRead;
+    });
+
+    const scoredBooks = unreadBooks.map(book => {
+        let score = 0;
+        let matchingThemes = [];
+
+        book.themes.forEach(theme => {
+            if (themeWeights[theme]) {
+                score += themeWeights[theme];
+                matchingThemes.push(theme);
+            }
+        });
+
+        // Calculate match percentage
+        const matchPercentage = Math.min(100, Math.round((matchingThemes.length / book.themes.length) * 100));
+
+        return {
+            book,
+            score,
+            matchingThemes,
+            matchPercentage
+        };
+    });
+
+    // Sort by score and return top 6
+    return scoredBooks
+        .filter(item => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 6);
+}
+
+// Update recommendations display
+function updateRecommendations() {
+    const recommendations = getRecommendations();
+    const section = document.getElementById('recommendationsSection');
+    const grid = document.getElementById('recommendationsGrid');
+
+    // Hide section if no recommendations
+    if (recommendations.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+
+    // Show section and render recommendations
+    section.style.display = 'block';
+    grid.innerHTML = recommendations.map(item => createRecommendationCard(item)).join('');
+
+    // Add click listeners
+    document.querySelectorAll('.recommendation-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const bookId = parseInt(card.dataset.bookId);
+            openBookModal(bookId);
+        });
+    });
+}
+
+// Create HTML for a recommendation card
+function createRecommendationCard(item) {
+    const { book, matchingThemes, matchPercentage } = item;
+
+    return `
+        <div class="recommendation-card" data-book-id="${book.id}">
+            <span class="recommendation-badge">Recommended</span>
+            <div class="book-title">${book.title}</div>
+            <div class="book-author">by ${book.author}</div>
+            <div class="book-year">Published: ${book.year}</div>
+            <div class="theme-tags">
+                ${matchingThemes.slice(0, 3).map(theme =>
+                    `<span class="theme-tag">${theme}</span>`
+                ).join('')}
+                ${matchingThemes.length > 3 ? `<span class="theme-tag">+${matchingThemes.length - 3}</span>` : ''}
+            </div>
+            <div class="match-info">
+                <span class="match-percentage">${matchPercentage}% match</span>
+                <span>• ${matchingThemes.length} shared theme${matchingThemes.length !== 1 ? 's' : ''}</span>
+            </div>
+        </div>
+    `;
 }
 
 // Setup event listeners

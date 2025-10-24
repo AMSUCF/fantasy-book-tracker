@@ -157,6 +157,108 @@ select:focus {
     letter-spacing: 1px;
 }
 
+/* Recommendations Section */
+.recommendations-section {
+    background: linear-gradient(135deg, rgba(74, 20, 140, 0.3), rgba(123, 31, 162, 0.3));
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(156, 39, 176, 0.2);
+}
+
+.recommendations-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.recommend-icon {
+    font-size: 1.2em;
+    animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+.recommendations-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid var(--gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.recommendation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), #ffed4e);
+    transform: scaleX(1);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+    border-color: #ffed4e;
+}
+
+.recommendation-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dark-bg);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.match-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+.match-percentage {
+    color: var(--gold);
+    font-weight: bold;
+}
+
 /* Book Grid */
 .book-grid {
     display: grid;
@@ -429,6 +531,14 @@ select:focus {
 
     .book-grid {
         grid-template-columns: 1fr;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations-title {
+        font-size: 1.5em;
     }
 
     .modal-content {
